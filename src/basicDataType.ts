@@ -10,7 +10,7 @@ export type TObj = {
   name: string;
   age: number;
   education?: {
-    institution: string;
+    institution: "University" | "College" | "Diploma" | "School";
     level: string;
   };
 };
