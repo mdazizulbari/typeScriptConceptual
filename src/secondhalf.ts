@@ -53,4 +53,11 @@
     age: 53,
     attitude: "No Learning",
   };
+
+  // Constraints => barrier
+  function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+  }
+  const name = getProperty(user23, "name");
+  console.log(typeof name);
 }
