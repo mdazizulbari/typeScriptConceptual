@@ -104,4 +104,16 @@
     age: true,
     attitude: true,
   };
+
+  // utility types
+  const userUpdate: Partial<ILearner> = {
+    name: "Abdur Rahim",
+  };
+
+  type unchangeable = Readonly<ILearner>;
+  const user420: unchangeable = {
+    name: "change me if you can",
+    age: 30,
+    attitude: "learning",
+  };
 }
