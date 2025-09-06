@@ -63,3 +63,4 @@ function crash(): never {
 // unknown type
 let nm: unknown = "Tanjim";
 console.log((nm as string).length);
+console.log((<string>nm).length); 
